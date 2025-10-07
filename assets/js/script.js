@@ -9,6 +9,10 @@ const submitBtn = document.getElementById("submitBtn");
 
 
 let todos = JSON.parse(localStorage.getItem("todos")) || [];
+$(document).ready(function() {
+  $("#slideIn").removeClass("d-none").hide().slideDown(5000);
+});
+
 
 function saveTodos() {
   localStorage.setItem("todos", JSON.stringify(todos));
