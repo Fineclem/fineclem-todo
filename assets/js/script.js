@@ -22,6 +22,8 @@ function renderTodos() {
   }
   emptyState.style.display = "none";
 
+ 
+
   todos.forEach((todo) => {
     const item = document.createElement("div");
     item.className = `list-group-item d-flex justify-content-between align-items-start ${todo.completed ? "todo-completed" : ""}`;
@@ -61,6 +63,8 @@ todoForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const title = titleInput.value.trim();
   const description = descInput.value.trim();
+
+  
 
   if (!title) return;
 
